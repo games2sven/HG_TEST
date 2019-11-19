@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_fragment_photo_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:scrollbars="none" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:id="@+id/ll_debug_view"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#33000000"
+        android:layout_gravity="right|center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sdcard_avalible"
+                android:textColor="@color/white_green_color_check_selector"/>
+            <TextView
+                android:id="@+id/tv_sdcard_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_green_color_check_selector"
+                android:text="NULL"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/storage_size"
+                android:textColor="@color/white_green_color_check_selector"/>
+            <TextView
+                android:id="@+id/tv_inner_count_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_green_color_check_selector"
+                android:text="0M"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/avilable_storage_size"
+                android:textColor="@color/white_green_color_check_selector"/>
+            <TextView
+                android:id="@+id/tv_inner_current_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_green_color_check_selector"
+                android:text="0M"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/get_sum_storage_size"
+                android:textColor="@color/white_green_color_check_selector" />
+
+            <TextView
+                android:id="@+id/tv_sd_current_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0M"
+                android:textColor="@color/white_green_color_check_selector" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/get_left_storage_size"
+                android:textColor="@color/white_green_color_check_selector" />
+
+            <TextView
+                android:id="@+id/tv_sd_rest_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0M"
+                android:textColor="@color/white_green_color_check_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/ll_custom_empty" />
+
+
+</FrameLayout>

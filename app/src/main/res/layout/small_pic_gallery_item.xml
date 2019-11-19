@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/framelayout_item_fragment_photo_gallery_image"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@color/color_808080">
+
+    <com.highgreat.education.widget.NetworkImageView
+        android:id="@+id/gallery_image"
+        android:layout_width="384px"
+        android:layout_height="384px"
+        android:scaleType="centerCrop"/>
+
+
+    <ImageView
+        android:id="@+id/download_flag"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:layout_gravity="top|start"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gallery_download_level"
+        />
+
+    <TextView
+        android:id="@+id/pic_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="5dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="120M"
+        android:textColor="@color/color_white"
+        android:textSize="42px"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/tv_mp4_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="5dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="00:00"
+        android:textColor="@color/color_white"
+        android:textSize="42px"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/image_play"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_gravity="center"
+        android:src="@mipmap/mt_shipin_bofang"
+        android:visibility="gone"/>
+
+    <com.highgreat.education.widget.ClockView
+        android:id="@+id/gallery_load_progress"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/select_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        >
+
+        <View
+            android:layout_width="384px"
+            android:layout_height="384px"
+            android:background="#99000000"
+            />
+
+        <ImageView
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/mt_xuanzhong"
+            />
+
+
+    </FrameLayout>
+</FrameLayout>

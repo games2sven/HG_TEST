@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_left"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/ll_base_function"
+        android:paddingStart="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/rl_take_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/one_key_take_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/take_off"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/land"
+                style="@style/camera_left_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back_land"
+                android:visibility="gone" />
+            <ImageView
+                android:id="@+id/emergency_hover"
+                style="@style/camera_left_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/emergency_hover"
+                android:visibility="gone" />
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/more_function"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/setting" />
+
+    </LinearLayout>
+
+</RelativeLayout>

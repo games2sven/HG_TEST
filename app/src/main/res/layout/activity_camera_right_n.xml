@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content" android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+       android:background="#4c000000"
+        >
+    <RelativeLayout
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:id="@+id/camera_right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:splitMotionEvents="false"
+        >
+        <ImageView
+            android:id="@+id/camera_seeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/swithch_mode_level" />
+
+
+
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/take_photo"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:visibility="visible"
+                android:src="@mipmap/take_photo" />
+
+
+            <ImageView
+
+                android:layout_centerInParent="true"
+                android:id="@+id/video_recording"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:src="@drawable/takevideo_level"
+                android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_video_time"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/video_recording"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:gravity="center"
+            >
+
+
+            <ImageView
+                android:id="@+id/red_dot"
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:layout_marginEnd="2dp"
+                android:src="@mipmap/video_time_circle"
+              />
+            <TextView
+                android:id="@+id/tv_video_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="00:00"
+                android:textSize="10sp"
+                />
+
+        </LinearLayout>
+
+
+
+        <com.highgreat.education.widget.NetworkImageView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/get_small_pic"
+            android:layout_width="34dp"
+            android:layout_height="28dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/gallery" />
+
+    </RelativeLayout>
+    </FrameLayout>
+</merge>

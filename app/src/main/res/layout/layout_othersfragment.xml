@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:scrollbars="none"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangle_black_bg"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/txt_guide"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_normal"
+                    android:layout_width="83dp"
+                    android:layout_height="31dp"
+                    android:text="@string/txt_check"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@drawable/rectangle_white_bg"
+                    android:textSize="12sp"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_black_bg"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_app_version"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_app_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="1.0.0"
+                    android:textColor="@color/white_20"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_app_update"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_app_update"
+                    android:layout_width="83dp"
+                    android:layout_height="31dp"
+                    android:text="@string/txt_update"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@drawable/rectangle_white_bg"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_black_bg"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_device"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_os_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.1.23"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white_20"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_os_update"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_update"
+                    android:layout_width="83dp"
+                    android:layout_height="31dp"
+                    android:text="@string/txt_update"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@drawable/rectangle_white_bg"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_black_bg"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_camera"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_camera_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:background="@drawable/rectangle_black_bg"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_TF"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_sdcard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sdcard_space_default"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white_20"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_format"
+                    android:layout_width="83dp"
+                    android:layout_height="31dp"
+                    android:text="@string/txt_format"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@drawable/rectangle_white_bg"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_black_bg"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/txt_recover_default"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_recover"
+                    android:layout_width="83dp"
+                    android:layout_height="31dp"
+                    android:text="@string/txt_recover"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:background="@drawable/rectangle_white_bg"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

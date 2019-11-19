@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangle_black_bg"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/fly_speed"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_normal"
+                android:layout_width="83dp"
+                android:layout_height="31dp"
+                android:text="@string/speed_normal"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/txt_left_selector"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_fast"
+                android:layout_width="83dp"
+                android:layout_height="31dp"
+                android:text="@string/speed_fast"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/txt_right_selector"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_black_bg"
+        >
+
+        <TextView
+            android:id="@+id/tv_control_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/control_set"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:drawableRight="@mipmap/question"
+            android:drawablePadding="9dp"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_janpanese"
+                android:layout_width="83dp"
+                android:layout_height="31dp"
+                android:text="@string/janpanese_hand"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/txt_left_selector"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_ameriacan"
+                android:layout_width="83dp"
+                android:layout_height="31dp"
+                android:text="@string/american_hand"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/txt_right_selector"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_black_bg"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/low_battery_warn"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_alignParentLeft="true"
+                android:text="25%"/>
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/thumb"
+                android:maxHeight="3dp"
+                android:minHeight="3dp"
+                android:max="3"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:duplicateParentState="false"
+                android:splitTrack="false"
+                android:thumbOffset="10dp"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

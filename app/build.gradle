@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.highgreat.education"
+        minSdkVersion 18
+        targetSdkVersion 28
+        versionCode project.properties['VERSION_CODE'].toInteger()
+        versionName project.properties['VERSION_NAME']
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "SERVER_API", project.properties['SERVER_API'] //
+
+
+        manifestPlaceholders = [
+                market           : project.properties["BUGLY_MARKET"].toString(),
+                bugly_debug      : "true",
+                bugly_appid      : project.properties['BUGLY_APPID'].toString(),
+                bugly_app_version: defaultConfig.versionName
+        ]
+
+        buildTypes {
+            release {
+                buildConfigField "boolean", "DEBUG_MODE","false"//H5
+                minifyEnabled true
+                proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            }
+
+            debug{
+                buildConfigField "boolean", "DEBUG_MODE","true"//H5
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            }
+        }
+
+
+    }
+
+
+
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+//            output ->
+//            def outputFile = output.outputFile
+//            def fileName = "HGDrone_${variant.buildType.name}_${releaseTime()}_${defaultConfig.versionName}.apk"
+//            output.outputFile = new File(outputFile.parent, fileName)
+            outputFileName = "Folk_${variant.buildType.name}_${releaseTime()}_${defaultConfig.versionName}.apk"
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation('com.android.support:appcompat-v7:27.0.0') {
+                exclude module: 'support-v4' }
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+//    androidTestImplementation 'androidx.test:runner:1.1.2-alpha01'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.2-alpha01'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.afollestad.material-dialogs:core:0.9.1.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    implementation 'com.liulishuo.filedownloader:library:1.6.2'
+    implementation 'com.tonicartos:superslim:0.4.13'
+    implementation(name: 'rt-ufo-togetherlibrary-release', ext: 'aar')
+    implementation files('libs/autoui.jar')
+    //rxjave 和 retrofit  相关依赖
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    //Rxjava and Retrofit（Retrofit+Rx需要添加的依赖）
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'io.reactivex:rxjava:1.2.1'
+
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+}

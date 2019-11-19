@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <!-- 遥控布局-start -->
+    <RelativeLayout
+        android:id="@+id/rl_sensor_touch_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="70dp"
+        >
+
+
+        <!-- 摇杆模式-start -->
+        <LinearLayout
+            android:id="@+id/ll_rocker_mode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.highgreat.education.flight.RockerRelativeLayout
+                android:id="@+id/rrl_throttle_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <com.highgreat.education.flight.RockerView
+                    android:id="@+id/rv_throttle_left"
+                    android:layout_width="@dimen/rocker_width"
+                    android:layout_height="@dimen/rocker_width"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true" />
+            </com.highgreat.education.flight.RockerRelativeLayout>
+
+            <com.highgreat.education.flight.RockerRelativeLayout
+                android:id="@+id/rrl_throttle_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <com.highgreat.education.flight.RockerView
+                    android:id="@+id/rv_throttle_right"
+                    android:layout_width="@dimen/rocker_width"
+                    android:layout_height="@dimen/rocker_width"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+            </com.highgreat.education.flight.RockerRelativeLayout>
+
+        </LinearLayout>
+        <!-- 摇杆模式-end -->
+
+
+        <!--&lt;!&ndash; 安全摇杆模式NewUI-start &ndash;&gt;-->
+        <!--<LinearLayout-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/ll_safe_rocker_area"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:visibility="visible"-->
+                <!--tools:ignore="NestedWeights">-->
+
+                <!--<com.highgreat.education.widget.RockerSafeView-->
+                    <!--android:id="@+id/rsv_left"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:visibility="visible">-->
+
+                <!--<com.highgreat.education.widget.RockerSafeView-->
+                    <!--android:id="@+id/rsv_right"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
+
+            <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+        <!--&lt;!&ndash; 安全摇杆模式NewUI-end &ndash;&gt;-->
+
+
+
+    </RelativeLayout>
+    <!-- 遥控布局-end -->
+
+</LinearLayout>

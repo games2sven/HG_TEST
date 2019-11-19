@@ -1,0 +1,202 @@
+<resources>
+    <string name="app_name">Folk</string>
+
+
+    <string name="tips_pp_new">是否需要降落飞行器</string>
+    <string name="confirm"> 降落</string>
+    <string name="cancle">取消</string>
+    <string name="select_all">全选</string>
+    <string name="photo">照片</string>
+    <string name="select">选择</string>
+    <string name="agree">确定</string>
+    <string name="disagree">取消</string>
+    <string name="pic_download_erro">图片下载失败,请检查网络</string>
+    <string name="video_download_erro">视频下载失败,请检查网络</string>
+    <string name="select_cancel">取消</string>
+    <string name="sdcard_avalible">SDCard卡是否可用:</string>
+    <string name="storage_size">手机存储总空间:</string>
+    <string name="avilable_storage_size">手机存储剩余空间:</string>
+    <string name="get_sum_storage_size">获取SDCARD总的存储空间:</string>
+    <string name="get_left_storage_size">获取SDCARD剩余存储空间:</string>
+    <string name="emptyview">什么都没有，快去联机拍摄美图吧～</string>
+    <string name="delete_info_empty">请先选中文件</string>
+    <string name="delete_info">确定删除？</string>
+    <string name="phone_storage_full">手机存储已满,下载失败</string>
+    <string name="file_has_downloaded">文件已下载</string>
+    <string name="load_info_empty">请先选中文件</string>
+    <string name="edit">编辑</string>
+    <string name="text_video">视频</string>
+    <string name="net_unconn">网络未连接</string>
+    <string name="str_no_internet">没有网络</string>
+    <string name="getver_failure">获取版本信息失败</string>
+    <string name="is_lastest_app_version">当前版本是最新版本</string>
+
+    <string name="app_update_mobile_net_tips">当前处于3G/4G移动网络下，下载视频将会产生流量资费，建议切换到Wi-Fi网络。</string>
+    <string name="correct_error">文件校准失败,请重新下载</string>
+    <string name="app_download">下载</string>
+    <string name="text_take_off">长按\n起飞</string>
+    <string name="text_land">长按\n降落</string>
+    <string name="text_take_off_tip">(长按解锁飞行器起飞)</string>
+    <string name="text_land_tip">(长按解锁飞行器降落)</string>
+    <string name="text_how_connect">如何连接</string>
+    <string name="text_how_connect_tip">长按飞行器电源键 2 秒开机 \n\n点击“连接飞行器”，在系统设置 WiFi 页面中连接 Folk-xxxxx 的网络 \n\n成功连接后，返回 Folk App</string>
+    <string name="text_connect">连接飞行器</string>
+
+    <string name="start">开始</string>
+    <string name="cancel">取消</string>
+
+    <string name="mode_1">抛飞模式</string>
+    <string name="mode_2">一键环绕模式</string>
+    <string name="mode_3">360°旋转模式</string>
+    <string name="mode_4">翻滚模式</string>
+    <string name="mode_5">弹跳模式</string>
+
+    <string name="mode_1_tips">轻轻向外抛出飞行器即可起飞</string>
+    <string name="mode_2_tips">飞行器将以当前机头延伸2米处为圆心，作环绕飞行</string>
+    <string name="mode_3_tips">飞机根据自身位置自传360一圈并录像</string>
+    <string name="mode_4_tips">飞行器实现前后左右四个方向的翻转</string>
+    <string name="mode_5_tips">飞行器将自动上下弹跳</string>
+
+    <string name="mode_1_start">开始抛飞</string>
+    <string name="mode_2_start">开始环绕</string>
+    <string name="mode_3_start">开始旋转</string>
+    <string name="mode_4_start">开始翻滚</string>
+    <string name="mode_5_start">开始弹跳</string>
+
+    <string name="mode_1_start_sure"> 在5秒内将无人机轻轻向上抛出，无人机将自行起飞并悬停</string>
+    <string name="mode_2_start_sure"> 飞行器将环绕x拍摄一段视频点击屏幕 X, 可退出模式 \n请在空旷、并远离人群的地点使用该功能</string>
+    <string name="mode_3_start_sure"> 器将原地旋转360°并拍摄一段视频点击屏幕 X，可退出模式</string>
+    <string name="mode_4_start_sure">滑动屏幕中央面板，即可完成对飞机的翻滚操作滑动方向，即为翻滚方向点击屏幕X，可退出该模式</string>
+    <string name="mode_5_start_sure"> 飞行器将在0.5m 到 1m 高度之间来回弹跳点击屏幕 X，可退出该模式</string>
+
+
+    <string name="wifi_set">WIFI设置</string>
+    <string name="device_set">设备设置</string>
+    <string name="others_set">其他</string>
+    <string name="fly_speed">飞行速度</string>
+    <string name="speed_normal">普通</string>
+    <string name="speed_fast">快速</string>
+    <string name="control_set">摇杆设置</string>
+    <string name="janpanese_hand">日本手</string>
+    <string name="american_hand">美国手</string>
+    <string name="low_battery_warn">低电量报警</string>
+
+    <string name="txt_guide">新手指引</string>
+    <string name="txt_app_version">APP版本</string>
+    <string name="txt_device">飞行器固件升级</string>
+    <string name="txt_camera">摄像头固件</string>
+    <string name="txt_TF">TF 卡存储空间</string>
+    <string name="txt_recover_default">恢复默认设置</string>
+
+    <string name="txt_recover">恢复</string>
+    <string name="txt_format">格式化</string>
+    <string name="txt_update">升级</string>
+    <string name="txt_check">查看</string>
+    <string name="wifi_name">WI-FI 名称：</string>
+    <string name="wifi_pwd">新密码：</string>
+    <string name="wifi_sure">确定</string>
+    <string name="change_wifi_success">修改wifi信息成功,请重新连接</string>
+    <string name="change_wifi_fail">修改wifi信息失败,请重试</string>
+
+
+
+
+
+    <string name="app_checking">正在检测版本...</string>
+    <string name="app_version">APP版本</string>
+    <string name="app_size">升级包大小</string>
+    <string name="os_downloading">下载中...</string>
+    <string name="app_log">更新日志</string>
+    <string name="app_update">APP升级</string>
+    <string name="os_update">固件升级</string>
+    <string name="os_version">固件版本</string>
+    <string name="uploading">正在上传固件至飞机%1$s</string>
+
+    <string name="uploading_tips"> 正在升级固件，升级过程大概在 3-5 分钟左右；升级期间请勿断开手机和飞行器的电源，否则将可能会导致飞行器损坏。</string>
+    <string name="uploading_tips2"> 升级成功后，飞行器将自动重启，重启后升级完成</string>
+
+    <string name="upload_success">上传固件成功，正在升级</string>
+    <string name="upload_success_tips">下载完成，请连接飞机安装</string>
+    <string name="format_sdcard">格式化存储卡</string>
+    <string name="format_start">执行</string>
+    <string name="formating">正在格式化，请稍后....</string>手动重启飞行器电源即可完成密码重置
+    <string name="format_success">格式化成功</string>
+    <string name="format_tips">进行此操作，会消除存储卡内所有文件，且不可撤销；确定执行？</string>
+
+    <string name="revovery">恢复默认</string>
+    <string name="get_kown">知道了</string>
+    <string name="wheather_recovery">是否将 App 设定恢复为默认</string>
+    <string name="recover_ok">已恢复默认设定</string>
+    <string name="text_reset_password_tip">默认密码为：12345678 \n长按复位键 3 秒钟以上，等待声音响起后，手动重启飞行器电源即可完成密码重置</string>
+
+    <string name="sdcard_space">剩余%1$s(共%2$sG)</string>
+    <string name="sdcard_space_default">剩余0G(共0G)</string>
+
+    <!-- 设置 -->
+    <string name="battery_exception">智能电池故障</string>
+    <string name="imu_exception">IMU故障</string>
+    <string name="magnetic_exception">磁力计故障</string>
+    <string name="absolute_presure">气压计故障</string>
+    <string name="Electric_modulation">电调故障</string>
+
+    <!-- 对话框内容-->
+    <string name="drone_info_dialog_gps_low2">GPS信号较差, 请在空旷环境下飞行</string>
+    <string name="drone_info_dialog_compass">指南针异常，请在远离磁干扰区到空旷处重新校准指南针并谨慎飞行</string>
+    <string name="drone_info_dialog_alert">请重启飞机，若重启后故障未消除，请联系售后技术支持。</string>
+
+
+    <string name="warning_1_land">磁数据异常，请校准指南针</string>
+    <string name="GYRO_exception">陀螺仪异常</string>
+    <string name="compass_exception">磁罗盘异常</string>
+    <string name="ACCEL_exception">加速度计异常</string>
+    <string name="warning_4">GPS故障，请重启设备！</string>
+    <string name="warning_6">光流异常，请重启设备！</string>
+    <string name="warning_7">超声波故障。</string>
+    <string name="warning_8">气压计故障。</string>
+    <string name="warning_10">IMU异常，请重启</string>
+    <string name="warning_19_land">GPS信号较差</string>
+    <string name="text_compass_alert">指南针异常</string>
+    <string name="ahrs_exeception">自检未通过</string>
+    <!--环绕飞行 --> <!--跟踪模式 -->
+
+    <!-- 飞机状态-->
+    <string name="drone_info_state_allow"> 允许</string>
+    <string name="drone_info_state_forbit">禁止</string>
+    <string name="drone_info_state_abnormity">异常</string>
+
+    <string name="error_not_take_off">飞机异常，无法起飞</string>
+    <string name="tip_warm1">电量低，请谨慎飞行</string>
+    <string name="tip_warm2">电量低，即将降落</string>
+    <string name="tip_warm3">电量低，无法起飞</string>
+    <string name="tip_warm4">存储卡空间不足，无法拍摄</string>
+    <string name="tip_warm5">未检测到存储卡，无法拍摄</string>
+    <string name="tip_warm6">光线不足，请谨慎飞行</string>
+    <string name="tip_error_1">定位系统异常，无法起飞</string>
+    <string name="tip_error_2">加速传感器异常，无法起飞</string>
+    <string name="tip_error_3">陀螺仪传感器异常，无法起飞</string>
+    <string name="tip_error_4">光流异常，无法起飞</string>
+    <string name="tip_error_5">气压计异常，无法起飞</string>
+    <string name="tip_error_6">系统准备中，无法起飞</string>
+    <string name="tip_error_7">自检未通过，无法起飞</string>
+    <string name="tip_error_8">电池异常，即将降落</string>
+    <string name="tip_error_9">电池异常无法起飞</string>
+    <string name="quit_devices">请降落飞机后再退出</string>
+    <string name="switch_wifi_tip2">飞行中,请降落飞机后操作</string>
+    <string name="ornotinterruptvideo">录像进行中, 切换Wi-Fi将中断与飞机连接，是否继续？</string>
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n请点击\"设置\"-\"权限\"-打开所需权限。\n请前往设置。</string>
+    <string name="settings">设置</string>
+
+    <string name="american_hand_demo">美国手示意图</string>
+    <string name="japannese_hand_demo">日本手示意图</string>
+    <string name="record_exit_confirm">正在录像，是否退出？</string>
+
+    <string name="wifi_prefix">HG-</string>
+    <string name="wifi_name_notempty">Wifi名称不能为空</string>
+    <string name="pwd_format">密码长度为8-20位的字母或者数字,区分大小写</string>
+    <string name="wifi_format">wifi名称只支持英文字母(区分大小写)和数字</string>
+    <string name="function_pre2">必须在电量大于40%时才能使用此功能</string>
+    <string name="function_pre1">必须在悬停中时才能使用此功能</string>
+    <string name="input_pwd">请输入8-20位字母或数字</string>
+
+</resources>

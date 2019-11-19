@@ -1,0 +1,20 @@
+<resources>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!--字体大小-->
+
+    <!--字体大小-->
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="rocket_offset">0dp</dimen>
+    <dimen name="rocket_icon_offset">0dp</dimen>
+    <dimen name="rocker_width">172dp</dimen>
+
+
+</resources>

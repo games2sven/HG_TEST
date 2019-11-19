@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="99px"
+    android:background="#212121"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    app:slm_headerDisplay="inline|sticky"
+    app:slm_isHeader="true"
+    >
+
+  <TextView
+      android:id="@+id/title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="40px"
+      android:padding="15px"
+      android:textColor="#ffffff"
+      android:textSize="39px"
+      tools:text="Header Item"
+      />
+
+  <TextView
+      android:id="@+id/select_info"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="100px"
+      android:text="@string/select_all"
+      android:textColor="#ffffff"
+      android:textSize="39px"
+      android:visibility="visible"
+      />
+  <!--app:slm_section_headerMarginStart="56dip"-->
+</LinearLayout>

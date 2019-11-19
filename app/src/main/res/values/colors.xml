@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="dialog_tranparent_bg">#80000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="color_white">#ffffff</color>
+
+    <color name="text_grey">#878787</color>
+    <color name="theme_grey">#CC12181b</color>
+    <color name="transparent">#00000000</color>
+    <color name="skin_photos_lib_blue">#0455E0 </color>
+    <color name="skin_photos_lib">#FF010101</color>
+    <color name="color_808080">#808080</color>
+
+    <color name="black_bg">#ff040208</color>
+    <color name="white_20">#33ffffff</color>
+    <color name="white_80">#CCffffff</color>
+    <color name="white_60">#99ffffff</color>
+    <color name="color_181818">#181818</color>
+    <color name="color_blue">#0000FF</color>
+    <color name="dialog_bg">#2B2B2B</color>
+    <color name="dialog_stroke">#EAF0F8</color>
+
+
+</resources>
